@@ -1,8 +1,8 @@
 [
   {
     "path": ".github/workflows/build.yml",
-    "sha256": "6e92a186cc1bf40d08bdf63587b9a65af27eb415c5a0528276505f55abc42bbb",
-    "bytes": 1110
+    "sha256": "644b12fd61c2a62d3b8cf0d700ce839b4ab46f767cfe8059c1fa12eff7e0593c",
+    "bytes": 1131
   },
   {
     "path": "LICENSE",
@@ -41,8 +41,8 @@
   },
   {
     "path": "README.md",
-    "sha256": "7167ab4f5c893f0fc6801d64469fd5795e792f64a742dcfefa9cc750ba068003",
-    "bytes": 7939
+    "sha256": "32ba076a081766084c766afc4f584d7ec4b4c00b9cb9619568bc52eacd78ef89",
+    "bytes": 8561
   },
   {
     "path": "Registration.cs",
@@ -63,6 +63,11 @@
     "path": "build.ps1",
     "sha256": "68f1aafccf1887ddda1c3c046ae690dd7d74744a13f106f95cd440eb5bdfeedb",
     "bytes": 1856
+  },
+  {
+    "path": "docs/HOST-DETAILS.md",
+    "sha256": "a4f28e2bc70bb7aba4c11046491853aecd76f8cb2308c68fea3840adb4ad3537",
+    "bytes": 7970
   },
   {
     "path": "fixture-results-5.json",
