@@ -1,0 +1,39 @@
+name: Build and review fixtures
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Build disclosed runtime and optional launcher
+        shell: powershell
+        run: .\build.ps1
+      - name: Windows PowerShell isolated fixtures
+        shell: powershell
+        run: .\tests.ps1
+      - name: PowerShell isolated fixtures
+        shell: pwsh
+        run: .\tests.ps1
+      - name: Publish complete source and build evidence
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: experimental-host-source-and-build
+          if-no-files-found: error
+          path: |
+            *.cs
+            *.ps1
+            *.dll
+            *.exe
+            package.json
+            build-provenance.json
+            fixture-results-*.json
+            README.md
+            MANUAL-EQUIVALENCE.md
+            PATCHES.md
+            historical-review-evidence.md
+            LICENSE

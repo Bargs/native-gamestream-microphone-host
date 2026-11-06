@@ -1,0 +1,112 @@
+[
+  {
+    "path": ".github/workflows/build.yml",
+    "sha256": "6e92a186cc1bf40d08bdf63587b9a65af27eb415c5a0528276505f55abc42bbb",
+    "bytes": 1110
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "52f217ab827ef46175c8593d1b7c7427948903aa19b3468d9c6ceac0b61d4e64",
+    "bytes": 1062
+  },
+  {
+    "path": "Launcher.cs",
+    "sha256": "7e721aa7cef1dd0664f249b7b2bd061163d4926ac68a3fc2ea8c65c18096cec6",
+    "bytes": 1516
+  },
+  {
+    "path": "MANUAL-EQUIVALENCE.md",
+    "sha256": "79eb4ad29748b83cb85194d4b80cf727899fed95858a9664870e6ae09830e2d5",
+    "bytes": 14289
+  },
+  {
+    "path": "NativeInterop.dll",
+    "sha256": "0d57a6256c840f08e0d66fe8f0e5fc2d6d7db291e6163fd6d95d8a51f5841085",
+    "bytes": 10240
+  },
+  {
+    "path": "NativeMic.cs",
+    "sha256": "31f0930562dbaa9c5b3fe6f5454cb0615133b9d7649529a1f3651ec9c449152d",
+    "bytes": 5157
+  },
+  {
+    "path": "NativeMicSetup.exe",
+    "sha256": "c628709f03202674140e77ac8fa7a00c55926a841c083a9c0ba077beb9feec24",
+    "bytes": 5120
+  },
+  {
+    "path": "PATCHES.md",
+    "sha256": "6ddf8d784709ff7055f1bb21bbfc83dbd575e3d9881ef3b1b267e633389eb919",
+    "bytes": 3325
+  },
+  {
+    "path": "README.md",
+    "sha256": "027678719728fdbee8c308e2ef9eec86f6c4229d0d810f9aedecbbf2d6cfe9b8",
+    "bytes": 10711
+  },
+  {
+    "path": "Registration.cs",
+    "sha256": "d7db82c1ccbe8f4d4f5e7a86190b24a2589c1f1d28d88383d4440e24c2ab1a77",
+    "bytes": 1631
+  },
+  {
+    "path": "RuntimeSafety.cs",
+    "sha256": "61743501d6888add6c2614e62c067e3f08fa6f563424bf2b9567e5cdadf3d47e",
+    "bytes": 3426
+  },
+  {
+    "path": "build-provenance.json",
+    "sha256": "0dfb1d1779b2bc6b7683b76bbbde1cbf03b3dd3cf445c6b300cb0519b8a0e9eb",
+    "bytes": 1297
+  },
+  {
+    "path": "build.ps1",
+    "sha256": "68f1aafccf1887ddda1c3c046ae690dd7d74744a13f106f95cd440eb5bdfeedb",
+    "bytes": 1856
+  },
+  {
+    "path": "fixture-results-5.json",
+    "sha256": "ad1cd0034cbf7653139864af46c3e82fce23da7b639178f458739ab610bd8cfb",
+    "bytes": 15732
+  },
+  {
+    "path": "fixture-results-7.json",
+    "sha256": "dc02204f48a8f86cfa4e78e4ac22f78fb365f66116225288a4487cfaf81ab21d",
+    "bytes": 9184
+  },
+  {
+    "path": "historical-review-evidence.md",
+    "sha256": "44fd160ef374e881b0dae171566f30dcad8b50a56066af08409acc649561f250",
+    "bytes": 4688
+  },
+  {
+    "path": "install.ps1",
+    "sha256": "20db90a16c1781c5bc43b1a2530d476e0dcf6aae8b046025481900f9c21e169c",
+    "bytes": 6711
+  },
+  {
+    "path": "management.ps1",
+    "sha256": "533f713359d19703b7c7eb9d35de797188a02a1086c3c246f884aaada39c02c8",
+    "bytes": 15372
+  },
+  {
+    "path": "package.json",
+    "sha256": "cf4d4ccbf36a41065694999868154b291dff30ed74dd46eca8d996631647ce5c",
+    "bytes": 1354
+  },
+  {
+    "path": "tests.ps1",
+    "sha256": "5f87e4f4b8034ceb52bcc8eb2c6b4aa59e463dac0d6f717ddf5c73172144e63a",
+    "bytes": 13098
+  },
+  {
+    "path": "uninstall.ps1",
+    "sha256": "1579731d3c65d76f95ddd7d998c55004c487f0f736c848d930e6c229ac209535",
+    "bytes": 879
+  },
+  {
+    "path": "watch.ps1",
+    "sha256": "aa44b78074c9d66eb3bb9c845b458d8509396fb7eb3cced611c9d4fa99bc4e23",
+    "bytes": 6330
+  }
+]

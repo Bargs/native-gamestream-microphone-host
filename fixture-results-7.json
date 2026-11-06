@@ -1,0 +1,379 @@
+{
+  "Checks": 93,
+  "Scope": "Parser, byte arrays, in-memory registry fixture and recording cleanup mocks only. No registry, task, service, process-memory or install calls.",
+  "Runtime": "7.6.9",
+  "Results": [
+    {
+      "Name": "Parse build.ps1",
+      "Passed": true
+    },
+    {
+      "Name": "Parse install.ps1",
+      "Passed": true
+    },
+    {
+      "Name": "Parse management.ps1",
+      "Passed": true
+    },
+    {
+      "Name": "Parse tests.ps1",
+      "Passed": true
+    },
+    {
+      "Name": "Parse uninstall.ps1",
+      "Passed": true
+    },
+    {
+      "Name": "Parse watch.ps1",
+      "Passed": true
+    },
+    {
+      "Name": "Manifest includes source/build/installer/runtime/optional EXE",
+      "Passed": true
+    },
+    {
+      "Name": "Tampered package hash refused",
+      "Passed": true
+    },
+    {
+      "Name": "Fresh install policy",
+      "Passed": true
+    },
+    {
+      "Name": "Installed policy verifies without activation",
+      "Passed": true
+    },
+    {
+      "Name": "Restored candidate can retry",
+      "Passed": true
+    },
+    {
+      "Name": "Unknown installer preserved",
+      "Passed": true
+    },
+    {
+      "Name": "Unknown phase preserved",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery requires recorded baseline",
+      "Passed": true
+    },
+    {
+      "Name": "Partial Staging requires explicit recovery",
+      "Passed": true
+    },
+    {
+      "Name": "Partial Staging has recovery route",
+      "Passed": true
+    },
+    {
+      "Name": "Partial Installing requires explicit recovery",
+      "Passed": true
+    },
+    {
+      "Name": "Partial Installing has recovery route",
+      "Passed": true
+    },
+    {
+      "Name": "Partial RecoveryRequired requires explicit recovery",
+      "Passed": true
+    },
+    {
+      "Name": "Partial RecoveryRequired has recovery route",
+      "Passed": true
+    },
+    {
+      "Name": "Synthetic patch exact result",
+      "Passed": true
+    },
+    {
+      "Name": "Patch preserves input bytes",
+      "Passed": true
+    },
+    {
+      "Name": "Already patched idempotent",
+      "Passed": true
+    },
+    {
+      "Name": "Unknown complete hash refused",
+      "Passed": true
+    },
+    {
+      "Name": "Incorrect expected opcode refused",
+      "Passed": true
+    },
+    {
+      "Name": "Out of range offset refused",
+      "Passed": true
+    },
+    {
+      "Name": "Incorrect patched hash refused",
+      "Passed": true
+    },
+    {
+      "Name": "JSON registry roundtrip absent",
+      "Passed": true
+    },
+    {
+      "Name": "JSON registry roundtrip DWORD0",
+      "Passed": true
+    },
+    {
+      "Name": "JSON registry roundtrip DWORD signed boundary",
+      "Passed": true
+    },
+    {
+      "Name": "JSON registry roundtrip literal ExpandString",
+      "Passed": true
+    },
+    {
+      "Name": "JSON registry roundtrip QWORD",
+      "Passed": true
+    },
+    {
+      "Name": "JSON registry roundtrip binary",
+      "Passed": true
+    },
+    {
+      "Name": "JSON registry roundtrip REG_NONE",
+      "Passed": true
+    },
+    {
+      "Name": "JSON registry roundtrip multistring",
+      "Passed": true
+    },
+    {
+      "Name": "JSON registry roundtrip string",
+      "Passed": true
+    },
+    {
+      "Name": "Later registry edit preserved",
+      "Passed": true
+    },
+    {
+      "Name": "Incomplete baseline refused",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts service restart after none",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts readiness after none",
+      "Passed": true
+    },
+    {
+      "Name": "Normal recovery has no errors",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts service restart after DisableTask",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts readiness after DisableTask",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery collects DisableTask",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts service restart after StopTask",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts readiness after StopTask",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery collects StopTask",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts service restart after StopService",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts readiness after StopService",
+      "Passed": true
+    },
+    {
+      "Name": "Failed stop defers vendor file/registry restore",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery collects StopService",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts service restart after RestoreFile",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts readiness after RestoreFile",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery collects RestoreFile",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts service restart after RestoreRegistry",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts readiness after RestoreRegistry",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery collects RestoreRegistry",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts service restart after RemoveTask",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts readiness after RemoveTask",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery collects RemoveTask",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts service restart after StartService",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts readiness after StartService",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery collects StartService",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts service restart after WaitHost",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery always attempts readiness after WaitHost",
+      "Passed": true
+    },
+    {
+      "Name": "Recovery collects WaitHost",
+      "Passed": true
+    },
+    {
+      "Name": "Same-root retry guarded",
+      "Passed": true
+    },
+    {
+      "Name": "External source retry accepted",
+      "Passed": true
+    },
+    {
+      "Name": "Current readiness accepted by pure predicate",
+      "Passed": true
+    },
+    {
+      "Name": "Stale run token refused",
+      "Passed": true
+    },
+    {
+      "Name": "Different helper build refused",
+      "Passed": true
+    },
+    {
+      "Name": "Old readiness timestamp refused",
+      "Passed": true
+    },
+    {
+      "Name": "Readiness without source PID refused",
+      "Passed": true
+    },
+    {
+      "Name": "Malformed readiness refused without throwing",
+      "Passed": true
+    },
+    {
+      "Name": "Production recovery restarts after task identity case owned",
+      "Passed": true
+    },
+    {
+      "Name": "Owned task has three guarded mutations",
+      "Passed": true
+    },
+    {
+      "Name": "Production recovery restarts after task identity case absent",
+      "Passed": true
+    },
+    {
+      "Name": "Absent task does not cause mutations",
+      "Passed": true
+    },
+    {
+      "Name": "Production recovery restarts after task identity case foreign-exe",
+      "Passed": true
+    },
+    {
+      "Name": "Foreign task preserved and recorded foreign-exe",
+      "Passed": true
+    },
+    {
+      "Name": "Production recovery restarts after task identity case foreign-principal",
+      "Passed": true
+    },
+    {
+      "Name": "Foreign task preserved and recorded foreign-principal",
+      "Passed": true
+    },
+    {
+      "Name": "Production recovery restarts after task identity case foreign-arguments",
+      "Passed": true
+    },
+    {
+      "Name": "Foreign task preserved and recorded foreign-arguments",
+      "Passed": true
+    },
+    {
+      "Name": "Production recovery restarts after task identity case foreign-description",
+      "Passed": true
+    },
+    {
+      "Name": "Foreign task preserved and recorded foreign-description",
+      "Passed": true
+    },
+    {
+      "Name": "Production recovery restarts after task identity case swap",
+      "Passed": true
+    },
+    {
+      "Name": "Task replacement between mutations preserved",
+      "Passed": true
+    },
+    {
+      "Name": "Byte comparison rejects differing length",
+      "Passed": true
+    },
+    {
+      "Name": "Byte comparison rejects unknown bytes",
+      "Passed": true
+    },
+    {
+      "Name": "Byte comparison accepts exact bytes",
+      "Passed": true
+    },
+    {
+      "Name": "Original activation catch preserves newly active host before service change",
+      "Passed": true
+    },
+    {
+      "Name": "Original activation catch recovers after service change begins",
+      "Passed": true
+    }
+  ]
+}

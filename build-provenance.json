@@ -1,0 +1,20 @@
+﻿{
+    "CompilerSHA256":  "46809206887326D2D24DB1EFF1F3064DE972C3451ABE766B49111450A5E08E00",
+    "Recipe":  "build.ps1: csc /target:library /platform:x64 NativeMic.cs Registration.cs RuntimeSafety.cs; csc /target:exe /platform:x64 Launcher.cs",
+    "Architecture":  "x64",
+    "Inputs":  {
+                   "NativeMic.cs":  "31F0930562DBAA9C5B3FE6F5454CB0615133B9D7649529A1F3651EC9C449152D",
+                   "RuntimeSafety.cs":  "61743501D6888ADD6C2614E62C067E3F08FA6F563424BF2B9567E5CDADF3D47E",
+                   "Launcher.cs":  "7E721AA7CEF1DD0664F249B7B2BD061163D4926AC68A3FC2EA8C65C18096CEC6",
+                   "Registration.cs":  "D7DB82C1CCBE8F4D4F5E7A86190B24A2589C1F1D28D88383D4440E24C2AB1A77",
+                   "build.ps1":  "68F1AAFCCF1887DDDA1C3C046AE690DD7D74744A13F106F95CD440EB5BDFEEDB"
+               },
+    "PowerShell":  "5.1.26100.9711",
+    "Outputs":  {
+                    "OptionalLauncher":  "C628709F03202674140E77AC8FA7A00C55926A841C083A9C0BA077BEB9FEEC24",
+                    "NativeInterop":  "0D57A6256C840F08E0D66FE8F0E5FC2D6D7DB291E6163FD6D95D8A51F5841085"
+                },
+    "CompilerVersion":  "4.8.9221.0 built by: NET481REL1LAST_25H2",
+    "Framework":  "Microsoft .NET Framework v4 compiler",
+    "Deterministic":  false
+}
