@@ -1,6 +1,6 @@
 # Use your client microphone in a Windows game or voice chat
 
-This companion lets a Windows PC running NVIDIA GameStream receive microphone audio from a compatible GameStream client. It was developed for Moonlight. Compatibility depends on native microphone negotiation and transport: private IPv4, mono 48 kHz Opus in 5 ms frames at 32 kbps CBR, and the negotiated legacy AES-CBC mode.
+This companion lets a Windows PC running NVIDIA GameStream receive microphone audio from a compatible GameStream client. It was developed with Moonlight clients in mind. Compatibility depends on native microphone negotiation and transport: private IPv4, mono 48 kHz Opus in 5 ms frames at 32 kbps CBR, and the negotiated legacy AES-CBC mode.
 
 The [Windows ZIP](https://github.com/Bargs/native-gamestream-microphone-host/archive/refs/heads/main.zip) includes the source, helper and optional launcher. The distributed Windows build passed source review and public build checks. Live installation and delivery still need testing. The setup walkthrough below uses the Mac client from the original live speech test.
 
