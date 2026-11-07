@@ -1,10 +1,18 @@
 # Use your client microphone in a Windows game or voice chat
 
-This companion enables NVIDIA’s native GameStream microphone receiver on a Windows host. It was developed for Moonlight and accepts microphone audio from a compatible GameStream client regardless of the client’s operating system. A compatible client must negotiate the native NVIDIA microphone endpoint and send mono 48 kHz Opus in 5 ms RTP frames using the negotiated legacy AES-CBC mode over private IPv4. The tested client and host combination is described below.
+This companion lets a Windows PC running NVIDIA GameStream receive microphone audio from a compatible GameStream client. It was developed for Moonlight. Compatibility depends on native microphone negotiation and transport: private IPv4, mono 48 kHz Opus in 5 ms frames at 32 kbps CBR, and the negotiated legacy AES-CBC mode.
 
-Moonlight microphone support is proposed in the [desktop client PR](https://github.com/moonlight-stream/moonlight-qt/pull/2095) and the [shared protocol PR](https://github.com/moonlight-stream/moonlight-common-c/pull/173).
+The [Windows ZIP](https://github.com/Bargs/native-gamestream-microphone-host/archive/refs/heads/main.zip) includes the source, helper and optional launcher. The distributed Windows build passed source review and public build checks. Live installation and delivery still need testing. The setup walkthrough below uses the Mac client from the original live speech test.
 
-**Available today:** the compatible Mac client is [source you must build](https://github.com/Bargs/moonlight-qt/tree/native-microphone-forwarding#building); this change has no published Mac installer here yet. The [Windows ZIP](https://github.com/Bargs/native-gamestream-microphone-host/archive/refs/heads/main.zip) includes source, helper and an optional setup launcher. The distributed Windows build has source review and public build checks; its installation and live microphone delivery still need testing.
+| Moonlight client contribution | Verification so far |
+| --- | --- |
+| [Desktop Windows, macOS and Linux](https://github.com/moonlight-stream/moonlight-qt/pull/2095) | macOS release build and SDL dummy capture passed on Mac. Windows and Linux builds and device checks await verification. |
+| [Android](https://github.com/moonlight-stream/moonlight-android/pull/1632) | Arm64 non-root debug app built. Device acceptance is pending. |
+| [iOS, iPadOS and tvOS](https://github.com/moonlight-stream/moonlight-ios/pull/736) | Both Apple device targets compiled and linked in a verification build with resource phases omitted. Packaging and device checks are pending. |
+| [Embedded Linux](https://github.com/moonlight-stream/moonlight-embedded/pull/941) | SDL capture adapter passed dummy-input checks. Linux package and hardware tests are pending. |
+| [Shared negotiation and transport](https://github.com/moonlight-stream/moonlight-common-c/pull/173) | Portable sender built and passed encrypted loopback checks. |
+
+These are source contributions under review. The Mac walkthrough requires a compatible build from the linked desktop source.
 
 ## What worked, and which setups qualify
 
@@ -62,7 +70,7 @@ Native transport is legacy AES-CBC without packet authentication, with repeated 
 - [Host details](docs/HOST-DETAILS.md): installer effects, SYSTEM task lifecycle, source build/audit and technical cautions.
 - [Complete manual/source equivalent](MANUAL-EQUIVALENCE.md): versions/hashes, commands, persistence and rollback.
 - [Patch details](PATCHES.md), [build provenance](build-provenance.json), [package hashes](package.json), and [historical protocol/source review](historical-review-evidence.md).
-- Moonlight contributions: [Mac client PR2095](https://github.com/moonlight-stream/moonlight-qt/pull/2095) and [common-c PR173](https://github.com/moonlight-stream/moonlight-common-c/pull/173).
+- The client PRs above describe each platform’s capture adapter and verification.
 
 For maintainers: would you prefer the optional source-built launcher plus full manual instructions, manual/source-build instructions alone, or another integration and distribution approach?
 
