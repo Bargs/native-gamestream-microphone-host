@@ -1,6 +1,8 @@
-# Use your Mac microphone in a Windows game or voice chat
+# Use your client microphone in a Windows game or voice chat
 
-This is the Windows companion for sending your Mac microphone through Moonlight to NVIDIA's existing native GameStream microphone receiver.
+This companion enables NVIDIA’s native GameStream microphone receiver on a Windows host. It was developed for Moonlight and accepts microphone audio from a compatible GameStream client regardless of the client’s operating system. A compatible client must negotiate the native NVIDIA microphone endpoint and send mono 48 kHz Opus in 5 ms RTP frames using the negotiated legacy AES-CBC mode over private IPv4. The tested client and host combination is described below.
+
+Moonlight microphone support is proposed in the [desktop client PR](https://github.com/moonlight-stream/moonlight-qt/pull/2095) and the [shared protocol PR](https://github.com/moonlight-stream/moonlight-common-c/pull/173).
 
 **Available today:** the compatible Mac client is [source you must build](https://github.com/Bargs/moonlight-qt/tree/native-microphone-forwarding#building); this change has no published Mac installer here yet. The [Windows ZIP](https://github.com/Bargs/native-gamestream-microphone-host/archive/refs/heads/main.zip) includes source, helper and an optional setup launcher. The distributed Windows build has source review and public build checks; its installation and live microphone delivery still need testing.
 
@@ -22,7 +24,7 @@ The helper is a scheduled task named **BargarArt.NativeGameStreamMic**. The inst
 
 While running, it checks roughly every 0.2 seconds and reapplies runtime changes when matching NVIDIA processes or session markers change. It continues when Moonlight is disconnected, has no time limit, and can run on battery. Fatal verification/runtime errors stop it. It reads local NVIDIA session markers and keeps status/error logs; it does not record microphone audio. [Exact task behavior, privileges and installer effects](docs/HOST-DETAILS.md) are disclosed before installation.
 
-## Setup walkthrough
+## Setup walkthrough for the Mac client
 
 These are the disclosed source/launcher steps. **The distributed build's full installation, live audio, reboot and uninstall walkthrough has not yet been validated.** The [manual](MANUAL-EQUIVALENCE.md) separates the original helper's live results from this rebuilt package.
 
